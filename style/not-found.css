@@ -54,7 +54,7 @@ button {
     background: #333;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 776px) {
 
     .container {
         display: block;

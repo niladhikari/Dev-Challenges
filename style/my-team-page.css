@@ -1,0 +1,142 @@
+* {
+  /* margin: 0px;
+  padding: 0px; */
+  font-family: "PT Serif", serif;
+}
+
+/* Header style */
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+}
+
+.header h1 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1.62px;
+}
+
+.header p {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 10px;
+  max-width: 450px;
+}
+
+.text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* image container */
+main {
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  padding: 0 10%;
+  /* padding-left: 100px; */
+}
+
+.image-container {
+  max-width: 60%;
+  padding: 0 10%;
+  padding-left: 100px;
+}
+.image-container h3 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+}
+.image {
+  display: flex;
+  width: 100%;
+}
+.image img {
+  width: 100%;
+}
+.image p {
+  margin: 0;
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+  color: #000;
+  font-family: PT Serif;
+  padding-left: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.pic2 ,.pic5{
+  margin-top: 100px;
+}
+.credit {
+  color: #a9a9a9;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 100px;
+  
+}
+.username{
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* media query for style */
+@media (max-width: 775px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+  main {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+  .pic2,
+  .pic5 {
+    margin-top: 0;
+  }
+  .pic2,
+  .pic4,
+  .pic6 {
+    margin-top: 100px;
+  }
+  .image-container {
+    max-width: 60%;
+    padding: 0 10%;
+    padding-left: 10px;
+  }
+  /* .image-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: flex-start;
+    padding: 10px;
+  }
+
+  .container .images {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 48px;
+  }
+
+  .container .images .image:nth-child(3n + 2) {
+    margin-top: unset;
+  }
+
+  .container .images .image:nth-child(odd) {
+    row-gap: 64px;
+  }
+
+  .container .images .image:nth-child(even) {
+    margin-top: 64px;
+  }
+  .container .images .image img {
+    width: 100%;
+    padding-top: 90px;
+    padding-left: 0px;
+    height: auto;
+  } */
+}
